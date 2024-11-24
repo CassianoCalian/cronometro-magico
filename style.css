@@ -1,0 +1,320 @@
+/*
+font-family: "Almendra", serif;
+font-family: "Cormorant Garamond", serif;
+*/
+
+html,
+body {
+  background: linear-gradient(to top, #160738fb, #41025c, #530999);
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  cursor: url(./images/varinha-Photoroom.png), pointer;
+}
+
+nav > picture > img {
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+}
+
+img {
+  object-fit: contain;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.firs-edit {
+  display: flex;
+  align-items: center;
+  font-family: "Almendra", serif;
+}
+
+.firs-edit > h2 {
+  font-size: 54px;
+  width: 700px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.hoverAlterado:hover {
+  background-color: #02df098a;
+}
+
+span {
+  font-weight: 800;
+  font-style: inherit;
+}
+
+.principal-section {
+  display: flex;
+  justify-content: center;
+}
+
+.clock-timer {
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: 600px;
+
+  border-radius: 60px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 650px;
+  padding: 0;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+.focus {
+  display: flex;
+  gap: 30px;
+}
+
+.focus > a {
+  color: #fff;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  margin-top: 16px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.focus > a:hover {
+  background-color: #6a0677;
+  border-radius: 8px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cronomether {
+  font-size: 150px;
+  padding: 0;
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 800;
+  color: #fff;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  margin-top: 30px;
+}
+
+.switch input[type="checkbox"] {
+  opacity: 0; /* Esconde o checkbox real */
+  width: 0;
+  height: 0;
+}
+
+.switch .slider {
+  position: relative;
+  cursor: pointer;
+  width: 60px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.4s;
+}
+
+.switch .slider:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  background-color: white;
+  border-radius: 50%;
+  bottom: 4px;
+  left: 4px;
+  transition: transform 0.4s;
+}
+
+#toogle:checked + .slider {
+  background-color: #6d06e2;
+}
+
+#toogle:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.music {
+  font-size: 20px;
+  font-family: "Cormorant Garamond", serif;
+  color: #fff;
+}
+
+.button-started {
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: #6a0677;
+  color: #fff;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  margin-top: 40px;
+}
+
+.button-started:hover {
+  background-color: #a64dff;
+}
+
+.bx--caret-right {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m9 19l8-7l-8-7z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.tasks {
+  display: flex;
+  justify-content: center;
+}
+
+.tasks-itens {
+  display: flex;
+  gap: 150px;
+  color: #fff;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.tasks-itens > h6 {
+  font-size: 14px;
+}
+
+.tasks-itens > h4 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+hr {
+  width: 588px;
+}
+
+.botao-circular {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #a64dff; /* Cor da borda */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+/* Estilo dos pontos */
+.botao-circular .pontos {
+  display: flex;
+  flex-direction: column;
+  gap: 3px; /* Espaçamento entre os pontos */
+}
+
+.botao-circular .pontos div {
+  width: 4px;
+  height: 4px;
+  background-color: #a64dff; /* Cor dos pontos */
+  border-radius: 50%;
+}
+
+.tasks-add {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tasks-add-itens {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  flex-direction: column; /* Alinha os itens em coluna */
+}
+
+.tasks-add-itens > h4 {
+  font-size: 20px;
+}
+
+.buttons-task {
+  display: flex;
+  gap: 355px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.buttons-task > h4 {
+  font-size: 24px;
+}
+
+.bx--add-to-queue {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M20 2H8c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2M8 16V4h12l.002 12z'/%3E%3Cpath fill='%23000' d='M4 8H2v12c0 1.103.897 2 2 2h12v-2H4zm11-2h-2v3h-3v2h3v3h2v-3h3V9h-3z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.add-button {
+  width: 588px;
+  border-radius: 32px;
+  border: 2px solid #6a0677;
+  background-color: transparent;
+  text-align: center;
+  display: flex; /* Alinha o conteúdo como flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 8px;
+  color: #fff;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.app__card-button--foco.active {
+  border-radius: 0.8rem;
+  background: #a64dff;
+  font-weight: 600;
+}

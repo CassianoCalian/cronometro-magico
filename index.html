@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-contexto="foco">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GiraTempo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <picture>
+          <img
+            class="logo"
+            src="/images/Gira.svg"
+            alt="Logo do site, um giratempo"
+          />
+        </picture>
+      </nav>
+    </header>
+    <section class="principal-section">
+      <div class="firs-edit">
+        <h2 class="titlee">
+          Conjure sua concentração,<br />
+          <span>mergulhe no que é oculto.</span>
+        </h2>
+        <picture>
+          <img
+            class="img-personagem"
+            src="/images/480px.svg"
+            alt="Personagem 1"
+          />
+        </picture>
+      </div>
+    </section>
+    <section class="clock-timer">
+      <div class="clock">
+        <div class="focus">
+          <a class="a-focus hoverAlterado app__card-button--foco active"
+            >Foco</a
+          >
+          <a class="a-desc hoverAlterado">Descanso curto</a>
+          <a class="a-long hoverAlterado">Descanso longo</a>
+        </div>
+        <div class="time">
+          <h2 class="cronomether">25:00</h2>
+          <div class="switch">
+            <input type="checkbox" id="toogle" />
+            <label for="toogle" class="slider"></label>
+            <span class="music">Música</span>
+          </div>
+          <div class="button-start">
+            <button id="start-pause" class="button-started">
+              <span class="bx--caret-right"></span>
+              <p>Começar</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tasks">
+      <div class="tasks-itens">
+        <h6>#Foco no Estudo</h6>
+        <h4>Você já é um vencedor!</h4>
+      </div>
+    </section>
+    <hr />
+    </section>
+  </body>
+  <script src="/script.js"></script>
+</html>
